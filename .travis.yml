@@ -7,4 +7,4 @@ before_install:
   - npm install -g @angular/cli
 
 script:
-  - docker run docker-anugular n
+  - docker run docker-anugular ng test --watch=false --browsers=ChromeHeadless
