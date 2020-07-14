@@ -4,6 +4,7 @@ services:
 
 before_install:
   - docker build -t docker-anugular -f Dockerfile.dev .
+  - npm install -g @angular/cli
 
 script:
-  - docker run docker-anugular ng test --watch=false --browsers=ChromeHeadless
+  - docker run docker-anugular n
